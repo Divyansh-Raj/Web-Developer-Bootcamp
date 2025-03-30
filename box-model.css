@@ -1,0 +1,50 @@
+body {
+    margin: 0px;
+}
+
+div {
+    width: 400px;
+    height: 200px;
+    background-color: #e5989b;
+}
+
+h1 {
+    width: 180px;
+    background-color: #83080c;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#one {
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+#two {
+    background-color: #b5838d;
+    border-color: black ;
+    border-width: 3px;
+    border-style: dashed;
+    border-left-color: aqua;
+    border-left-width: 6px;
+}
+
+#three {
+    background-color: #6d6875;
+    border: 4px dotted black;
+    border-left-style: solid;
+    border-left-width: 8px;
+    border-radius: 10px;
+}
+
+button {
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 100px;
+}
