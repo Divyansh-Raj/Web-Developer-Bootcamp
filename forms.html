@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+
+    <form action="/tacos">
+        <label for="name">Username</label>
+        <input type="text" name="username11" id="name" placeholder="Enter your username" required> <br>
+        <label for="password">Password</label>
+        <input type="password" name="password"  id="password" placeholder="Enter your password" minlength="6" maxlength="20" required> <br>
+        <label for="color">Favorite Color</label>
+        <input type="color"  id="color" name="color"><br>
+        <label for="number">Number</label>
+        <input type="number" name="num" id="number"  placeholder="Enter a number"> <br>
+        <label for="date">Birthday</label>
+        <input type="date" name="date"  id="date" placeholder="Enter a date"> <br>
+        <input type="submit" value="Submit Data">
+    </form>
+
+    <hr>
+
+    <h2>Hijacking the Servers</h2>
+    <h3>Reddit Server</h3>
+        <form action="https://www.reddit.com/search">
+            <input type="text" name="q" placeholder="Search Reddit">
+            <input type="submit" value = "Search">
+        </form>
+
+        <hr>
+        <h3>Google Server</h3>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" placeholder="Search Google">
+            <input type="submit" value = "Search Google">
+        </form>
+
+        <hr>
+        <h3>Youtube Server</h3>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query" placeholder="Search Youtube">
+            <input type="submit" value="Search Youtube">
+        </form>
+
+        <h2>More Input Tags</h2>
+        
+        <form action="about.html">
+            <input type="checkbox" name="agree_tos" id="agree">
+            <label for="agree">I agree to all the terms and services</label>
+            <br>
+            <label for="small">Small</label>
+            <input type="radio" name="size" value="small" id="small">
+            <label for="large">Large</label>
+            <input type="radio" name="size" value="large" id="large">
+            <label for="extra_large">Extra Large</label>
+            <input type="radio" name="size" value="extra_large" id="extra_large">
+
+            <br>
+            <label for="meal">Select the Meal</label>
+            <select name="mealType" id="meal">
+                <option value="" selected>--Please select the meal--</option>
+                <option value="chicken">Chicken</option>
+                <option value="stake">Stake</option>
+                <option value="fish">Fish</option>
+                <option value="rabbit">Rabbit</option>
+            
+            </select>
+
+            <br>
+            <label for="cheese">Select the amount of Cheese</label>
+            <input type="range" name="chees_level" id="cheese" min="0" max="100" step="10">
+
+            <br>
+            <label for="additional_details">Additional Details</label>
+            <br>
+            <textarea name="details" id="additional_details" rows="10" cols="50">Believe in yourself</textarea>
+
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+</body>
+</html>
